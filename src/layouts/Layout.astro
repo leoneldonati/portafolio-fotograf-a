@@ -1,5 +1,7 @@
 ---
 import "@styles/global.css";
+import HeaderTop from "@components/header-top.astro";
+import Header from "@components/header.astro";
 ---
 
 <!doctype html>
@@ -8,9 +10,11 @@ import "@styles/global.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Celina RGL - Fotografía profesional</title>
+    <title>Celina RGL - Fotógrafa profesional</title>
   </head>
   <body>
+    <HeaderTop />
+    <Header />
     <slot />
   </body>
 </html>

@@ -1,0 +1,46 @@
+---
+import IconBrandInstagram from "/public/brand-instagram.svg";
+import IconBrandWhatsapp from "/public/brand-whatsapp.svg";
+---
+
+<header
+  class="flex justify-evenly gap-8 [&>ul]:flex [&>ul]:items-center [&>ul]:gap-3"
+>
+  <ul>
+    <li>
+      <a href="/about" title="¡Conóceme! ❤" aria-label="Sobre mí">
+        Sobre mí
+      </a>
+    </li>
+    <li>
+      <a href="/contact" title="¡Trabajemos juntos! ✔" aria-label="Contáctame">
+        Contacto
+      </a>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a
+        href="https://instagram.com/Celina.RGL_Fotografa"
+        target="_blank"
+        rel="noreferrer noopener"
+        title="Chequea mi Instagram 🤳"
+        aria-label="Ir a Instagram"
+      >
+        <IconBrandInstagram />
+      </a>
+    </li>
+    <li>
+      <a
+        href=`https://api.whatsapp.com/send?phone=5493413481404&text=${encodeURIComponent("Hola Celina! Me gustaría *conocer más sobre tus servicios*!")}`
+        target="_blank"
+        rel="noreferrer noopener"
+        title="Mandame un Whatsapp 📩"
+        aria-label="Ir a WhatsApp"
+      >
+        <IconBrandWhatsapp />
+      </a>
+    </li>
+  </ul>
+</header>
